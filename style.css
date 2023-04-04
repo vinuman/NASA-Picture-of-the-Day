@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 2rem 4rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #040404;
+}
+
+header {
+  background-color: #13505b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+input {
+  width: 120px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #13505b;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 120px;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #119da4;
+}
+
+#current-image-container {
+  margin: 2rem 0;
+  width: 70%;
+  overflow: hidden;
+}
+
+#current-image-container > h2 {
+  background-color: #13505b;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+#current-image-container > h3 {
+  background-color: #13505b;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+#search-history-container {
+  margin-top: 2rem;
+  color: #fff;
+}
+
+#search-history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#search-history li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+#search-history li:hover {
+  text-decoration: underline;
+}
+
+.search-results {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+ul:hover {
+  color: #fff;
+}
+
+p {
+  color: #fff !important;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 796px) {
+  html {
+    margin: 0rem 0rem;
+  }
+  header {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .search-results {
+    flex-direction: column-reverse;
+  }
+  #current-image-container {
+    width: 90%;
+
+    margin: 2rem auto;
+  }
+  #current-image-container > h2 {
+    background-color: #1e90ff;
+    color: #fff;
+    width: 100%;
+    font-size: 1rem !important;
+  }
+
+  #current-image-title {
+    font-size: 0.5rem;
+  }
+
+  form {
+    margin-left: 2rem;
+  }
+  #current-image-container > h3 {
+    font-size: 1rem;
+  }
+}
